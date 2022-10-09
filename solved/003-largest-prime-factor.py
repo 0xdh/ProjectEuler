@@ -15,9 +15,9 @@ for num in chain([2], range(3, number, 2)):
             break
     if is_prime:
         if number % num == 0:
-            print(num)
             while number % num == 0:
                 number = int(number / num)
             if number == 1:
+                print(num)
                 break
         primes.append(num)
